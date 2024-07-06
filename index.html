@@ -4,16 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First login page</title>
+    <style>
+        .container{
+            /* background-image: url(image/login.jpg); */
+            background-color: beige;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            margin: 70px;
+            padding: 40px;
+            height: 120%;
+            text-align: center;
+        }
+        label{
+            display: block;
+            margin: 10px;
+        }
+        fieldset{
+            margin: 10px;
+        }
+        .comment{
+            
+            height: 100px;
+        }
+        a:link, a:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: red;
+}
+
+    </style>
 </head>
 <body>
     <header>
 
     </header>
-    <main>
+    <main class="container">
+        <section>
+            <h1>Login The Page</h1>
+            
+            <form>
+                <fieldset>
+                    <label for="name">Your name:
+                        <input  type="text" id="name" placeholder="Your name">
+                    </label>
+                    <label for="">Your email:
+                        <input  type="email" id="email" placeholder="Your email">
+                    </label>
+                    <label for="phone">phone number:
+                        <input  type="text" id="phone" placeholder="Your phone ">
+                    </label>
+    
+                    
+                </fieldset>
+                <fieldset class="comment">
+                    <legend>Comment:</legend>
+                </fieldset>
+                <fieldset>
+                    <label for="img">Search your image here
+                        <select name="button" id="button">
+                            <option value="panda">panda</option>
+                            <option  value="panda">kongpu</option>
+                            <option value="panda">sneke</option>
+                            <option value="panda">lion</option>
+                        </select>
+                        
+                        <img style="width: 100%;" src="image/panda.jpg" alt="">
+                        <br>
+                        <br>
+                        <p><a href="https://en.wikipedia.org/wiki/Giant_panda">learn more</a></p>
+                        
+                        
+                    </label>
+                    
+                </fieldset>
+            </form>   
+             
 
+           
+
+        </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
